@@ -508,9 +508,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc231438c90888049947fd29c4f1a3b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherPortal: {fileID: 1088767535}
   rightPortal: {fileID: 0}
   leftPortal: {fileID: 0}
-  player: {fileID: 0}
   otherPPortal: {fileID: 0}
 --- !u!54 &485388802
 Rigidbody:
@@ -1378,9 +1378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a68593146e42349a99ffe6ec8d22fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherPortal: {fileID: 485388796}
   rightPortal: {fileID: 0}
   leftPortal: {fileID: 0}
-  player: {fileID: 1386143254}
   otherPPortal: {fileID: 980631239}
 --- !u!54 &1088767541
 Rigidbody:
@@ -1737,9 +1737,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a68593146e42349a99ffe6ec8d22fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherPortal: {fileID: 0}
   rightPortal: {fileID: 0}
   leftPortal: {fileID: 0}
-  player: {fileID: 0}
   otherPPortal: {fileID: 0}
 --- !u!1 &1667673908
 GameObject:

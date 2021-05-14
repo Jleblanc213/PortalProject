@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class PortalTransitR : MonoBehaviour
 {
-
+    public GameObject otherPortal;
     public GameObject rightPortal;
     public GameObject leftPortal;
-
-    public GameObject player;
 
     public Transform otherPPortal;
 
@@ -18,12 +16,18 @@ public class PortalTransitR : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         Debug.Log("coliding");
-        PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
-        if (player != null)
+       // PlayerMovement player = other.gameObject.GetComponent<PlayerMovement>();
+
+        if (other.tag == "Player")
         {
-            Debug.Log("player is not null");
-            //player.TeleLeft();
+            other.transform.position = otherPortal.transform.position + otherPortal.transform.forward *1;
         }
+
+       //if (player != null)
+        //{
+           // Debug.Log("player is not null");
+            //player.TeleLeft(); 
+        //}
     }
 
 }

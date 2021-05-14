@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void TeleRight()
     {
-        //rb.transform.position = RightTP.transform.position;
+        //rb.transform.position = RightTP.transform.position; having a rigid body breaks my game soo can't have this way I guess
     }
 
     public void TeleLeft()
