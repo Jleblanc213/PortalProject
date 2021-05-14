@@ -20,8 +20,13 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    Rigidbody rb;
+
+    public GameObject RightTP;
+    public GameObject LeftTP;
+
     // Start is called before the first frame update
-    
+
 
     // Update is called once per frame
     void Update()
@@ -63,5 +68,18 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
+
     }
+
+    public void TeleRight()
+    {
+        //rb.transform.position = RightTP.transform.position;
+    }
+
+    public void TeleLeft()
+    {
+       // rb.transform.position = RightTP.transform.position;
+    }
+
+
 }
